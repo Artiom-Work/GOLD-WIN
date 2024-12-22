@@ -1,0 +1,34 @@
+// colors
+$page-bg: #100f15;
+$accent-bg: linear-gradient(5deg, #fbc81f 0%, #ffaf2e 88.5%);
+$accent-bg-hover: linear-gradient(5deg, #fbc81f 0%, #ffaf2e 88.5%);
+$accent-bg-active: linear-gradient(5deg, #fbc81f 0%, #ffaf2e 88.5%);
+$button-bg: #161a2799;
+$button-bg-hover: #1f243499;
+$button-bg-active: #292d3a;
+$text-color-main: rgba(239, 239, 241 0.6);
+$text-color-main-hover: rgba(239, 239, 241 0.7);
+$text-color-main-avtive: #efeff1;
+$text-color-light: #fff;
+$text-color-light-hover: #c9c9c9;
+$text-color-light-active: #787878;
+
+// fonts
+$font-family: "google-sans", sans-serif;
+$font-family-regular: "google-sans500", sans-serif;
+$second-family: "gotham-pro", sans-serif;
+// paths
+// $imagesPath: "../../images"; // example
+// propertyes
+// $border: 1px solid blue; // example
+// mixins
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flexCenterSpaceBetwen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
