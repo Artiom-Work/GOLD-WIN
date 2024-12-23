@@ -1,15 +1,21 @@
 // connecting main css files
-@import "normolize.css";
-@import "nulling-styles.css";
-@import "fonts.css";
+@import "../css/normolize.css";
+@import "../css/nulling-styles.css";
+@import "../css/fonts.css";
 // connecting scss files
-@import "_variables.scss";
+@import "./variables";
 // blocks
-@import "_test.scss";
+@import "./logo.scss";
+@import "./nav.scss";
+@import "./socials.scss";
+@import "./header.scss";
 
 // properties
+body {
+  background: $page-bg;
+}
 .center {
-  max-width: 1530px;
+  max-width: 1590px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;

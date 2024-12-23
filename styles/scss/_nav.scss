@@ -1,0 +1,78 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 17px;
+  &__list {
+    margin-right: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+    @media (max-width: 1500px) {
+      width: 100%;
+      margin-right: unset;
+      justify-content: center;
+    }
+    @media (max-width: 1000px) {
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 0 56px;
+    }
+  }
+  &__link {
+    display: inline-block;
+    font-family: $font-family;
+    font-size: 19px;
+    line-height: 151%;
+    color: $text-color-main;
+    transition: all 0.4s ease 0s;
+    @include hover {
+      color: $text-color-main-hover;
+    }
+    @include active {
+      color: $text-color-main-active;
+      transform: scale(0.9);
+    }
+    @media (max-width: 1000px) {
+      font-family: $second-family;
+      font-size: 20px;
+      line-height: 148%;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: $text-color-light;
+    }
+  }
+  &__btn {
+    transition: all 0.4s ease 0s;
+    @include button(
+      $font-family,
+      19px,
+      105%,
+      $text-color-light,
+      $button-bg,
+      21.5px 28.5px,
+      13px
+    );
+    @include hover {
+      background: $button-bg-hover;
+    }
+    @include active {
+      background: $button-bg-active;
+      transform: scale(0.9);
+    }
+    @media (max-width: 1000px) {
+      margin: 0 0 146px;
+      font-size: 14px;
+      line-height: 156%;
+      padding: 15px 45px;
+      border-radius: 0px;
+    }
+  }
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    justify-content: center;
+    padding: 172px 0 105px;
+    gap: 0;
+  }
+}

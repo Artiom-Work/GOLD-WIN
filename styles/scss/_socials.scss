@@ -1,0 +1,39 @@
+.socials {
+  display: flex;
+  &__item {
+    width: 48px;
+    height: 48px;
+    @include flexCenter;
+    @media (max-width: 1000px) {
+      width: 42px;
+      height: 49px;
+    }
+  }
+  &__icon {
+    fill: $text-color-light;
+    transition: all 0.4s ease 0s;
+    &--telegram {
+      width: 21px;
+      height: 21px;
+      @media (max-width: 1000px) {
+        width: 19px;
+        height: 19px;
+      }
+    }
+    &--vk {
+      width: 25px;
+      height: 26px;
+    }
+    @include hover {
+      fill: $text-color-light-hover;
+    }
+    @include active {
+      transform: scale(0.9);
+      fill: $text-color-light-active;
+    }
+    @include active-mobile {
+      transform: scale(0.9);
+      fill: $text-color-light-active;
+    }
+  }
+}
