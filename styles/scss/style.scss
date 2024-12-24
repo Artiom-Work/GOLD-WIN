@@ -9,10 +9,15 @@
 @import "./nav.scss";
 @import "./socials.scss";
 @import "./header.scss";
+@import "./footer.scss";
 
 // properties
 body {
+  font-family: $font-family;
+  font-size: 19px;
+  line-height: 151%;
   background: $page-bg;
+  color: rgba(255, 255, 255, 0.7);
 }
 .center {
   max-width: 1590px;

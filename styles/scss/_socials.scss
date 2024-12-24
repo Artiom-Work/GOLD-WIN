@@ -1,12 +1,26 @@
 .socials {
   display: flex;
+  &--footer {
+    gap: 25px;
+    @media (max-width: 1000px) {
+      gap: 10px;
+    }
+  }
   &__item {
     width: 48px;
     height: 48px;
     @include flexCenter;
+    &--footer {
+      padding: 11px 0 0;
+      width: 34px;
+    }
     @media (max-width: 1000px) {
       width: 42px;
       height: 49px;
+    }
+    @media (max-width: 1000px) {
+      width: 28px;
+      height: 36px;
     }
   }
   &__icon {

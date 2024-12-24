@@ -19,7 +19,7 @@
 			</div>
 
 			<nav class="header__nav nav">
-				<ul class="nav__list">
+				<ul class="nav__list nav__list--header">
 					<li class="nav__list-item">
 						<a class="nav__link" href="#!">Преимущества</a>
 					</li>
@@ -61,18 +61,18 @@
 				</label>
 				<div class="mobile-menu__wrapper">
 					<nav class="mobile-menu__box nav">
-						<ul class="nav__list">
+						<ul class="nav__list nav__list--mobile">
 							<li class="nav__list-item">
-								<a class="nav__link" href="#!">Преимущества</a>
+								<a class="nav__link-mobile-menu" href="#!">Преимущества</a>
 							</li>
 							<li class="nav__list-item">
-								<a class="nav__link" href="#!">FAQ</a>
+								<a class="nav__link-mobile-menu" href="#!">FAQ</a>
 							</li>
 							<li class="nav__list-item">
-								<a class="nav__link" href="#!">Отзывы</a>
+								<a class="nav__link-mobile-menu" href="#!">Отзывы</a>
 							</li>
 							<li class="nav__list-item">
-								<a class="nav__link" href="#!">Контакты</a>
+								<a class="nav__link-mobile-menu" href="#!">Контакты</a>
 							</li>
 						</ul>
 
@@ -99,6 +99,59 @@
 			</div>
 		</div>
 	</header>
+
+	<footer class="footer">
+		<div class="center">
+			<nav class="footer__nav nav">
+				<div class="footer__logo logo">
+					<a class="logo__link" href="index.html">
+						<img class="logo__image" src="./images/logo/logo-image.svg" alt="Логотип">
+					</a>
+				</div>
+
+				<ul class="nav__list nav__list--footer">
+					<li class="nav__list-item">
+						<a class="nav__link" href="#!">Преимущества</a>
+					</li>
+					<li class="nav__list-item">
+						<a class="nav__link" href="#!">FAQ</a>
+					</li>
+					<li class="nav__list-item">
+						<a class="nav__link" href="#!">Отзывы</a>
+					</li>
+					<li class="nav__list-item">
+						<a class="nav__link" href="#!">Контакты</a>
+					</li>
+				</ul>
+
+				<ul class="nav__socials socials socials--footer">
+					<li class="socials__item socials__item--footer">
+						<a class="socials__link" href="https://vk.com/" target="_blank">
+							<svg class="socials__icon socials__icon--telegram" viewBox="0 0 24 24">
+								<use xlink:href="./images/icons/sprite-icons.svg#social-telegram"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="socials__item socials__item--footer">
+						<a class="socials__link" href="https://telegram.org/" target="_blank">
+							<svg class="socials__icon socials__icon--vk" viewBox="0 0 24 24">
+								<use xlink:href="./images/icons/sprite-icons.svg#social-vk"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="footer__copyright">
+				<p class="footer__copyright-text">
+					&copy;&nbsp;GoldWin 2024. Все права защищены. Несанкционированное воспроизведение, модификация,
+					распространение, публикация, передача или любая форма копирования строго запрещены.
+				</p>
+			</div>
+
+
+		</div>
+	</footer>
 
 	<script type="module" src="js/main.js"></script>
 </body>
