@@ -1,19 +1,19 @@
 @font-face {
 	font-family: "gotham-pro";
 	src: url("../../fonts/gotham-pro/GothamPro-Medium.eot");
-	src: local("MuseoSansCyrl-500"),
+	src: local("gotham-pro"),
 		url("../../fonts/gotham-pro/GothamPro-Medium.eot?#iefix") format("embedded-opentype"),
 		url("../../fonts/gotham-pro/GothamPro-Medium.woff2") format("woff2"),
 		url("../../fonts/gotham-pro/GothamPro-Medium.woff") format("woff"),
 		url("../../fonts/gotham-pro/GothamPro-Medium.ttf") format("truetype");
-	font-weight: normal;
+	font-weight: 500;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'google-sans500';
 	src: url('../../fonts/google-sans/GoogleSans-Medium.eot');
-	src: local('google-sans Medium'), local('GoogleSans-Medium'),
+	src: local('google-sans500'), local('GoogleSans-Medium'),
 		url('../../fonts/google-sans/GoogleSans-Medium.eot?#iefix') format('embedded-opentype'),
 		url('../../fonts/google-sans/GoogleSans-Medium.woff2') format('woff2'),
 		url('../../fonts/google-sans/GoogleSans-Medium.woff') format('woff'),

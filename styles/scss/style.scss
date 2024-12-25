@@ -9,6 +9,7 @@
 @import "./nav.scss";
 @import "./socials.scss";
 @import "./header.scss";
+@import "./promo.scss";
 @import "./footer.scss";
 
 // properties
@@ -19,9 +20,18 @@ body {
   background: $page-bg;
   color: rgba(255, 255, 255, 0.7);
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $second-family;
+  text-transform: uppercase;
+}
 .center {
-  max-width: 1590px;
+  max-width: 1588px;
   width: 100%;
-  padding: 0 15px;
+  padding: 0 14px;
   margin: 0 auto;
 }

@@ -35,14 +35,14 @@
 				</ul>
 
 				<ul class="nav__socials socials">
-					<li class="socials__item">
+					<li class="socials__item socials__item--padd">
 						<a class="socials__link" href="https://vk.com/" target="_blank">
 							<svg class="socials__icon socials__icon--telegram" viewBox="0 0 24 24">
 								<use xlink:href="./images/icons/sprite-icons.svg#social-telegram"></use>
 							</svg>
 						</a>
 					</li>
-					<li class="socials__item">
+					<li class="socials__item socials__item--padd">
 						<a class="socials__link" href="https://telegram.org/" target="_blank">
 							<svg class="socials__icon socials__icon--vk" viewBox="0 0 24 24">
 								<use xlink:href="./images/icons/sprite-icons.svg#social-vk"></use>
@@ -99,8 +99,63 @@
 			</div>
 		</div>
 	</header>
+	<main>
 
-	<footer class="footer">
+		<section class="promo">
+			<div class="center">
+				<div class="promo__description">
+					<h1 class="promo__title">
+						Зарабатывай с&nbsp;лучшей игровой платформой привлекая трафик
+					</h1>
+					<p class="promo__text">
+						Ваш трафик&nbsp;&mdash; наш инструмент для увеличения вашего дохода
+					</p>
+					<div class="promo__buttons">
+						<a class="promo__btn promo__btn--accent" href="#!">
+							<span>Cтать&nbsp;партнёром</span>
+						</a>
+						<a class="promo__btn" href="#!">
+							<span class="promo__btn-text--desktop">Менеджер</span>
+							<span class="promo__btn-text--mobile">Поддержка</span>
+							<svg class="promo__btn-icon" viewBox="0 0 24 24">
+								<use xlink:href="./images/icons/sprite-icons.svg#social-telegram"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+
+				<ul class="promo__badges">
+					<li class="promo__badge">
+						<h2 class="promo__badge-name">RevShare</h2>
+						<span class="promo__badge-text">от&nbsp;50%</span>
+					</li>
+					<li class="promo__badge">
+						<h2 class="promo__badge-name">CPA</h2>
+						<span class="promo__badge-text">до&nbsp;200%</span>
+					</li>
+					<li class="promo__badge">
+						<h2 class="promo__badge-name">депозиты</h2>
+						<span class="promo__badge-text">от&nbsp;15%</span>
+					</li>
+				</ul>
+
+
+				<picture class="promo__image-wrapper">
+					<source
+						srcset="./images/promo/promo-backgroud-image-1920.png , ./images/promo/promo-backgroud-image-1920@2x.png "
+						media="(min-width: 1000px)">
+					<source
+						srcset="./images/promo/promo-backgroud-image-360.png , ./images/promo/promo-backgroud-image-360@2x.png"
+						media="(max-width: 767px)">
+
+					<img class="promo__image" src="./images/promo/promo-backgroud-image-1000.png"
+						srcset="./images/promo/promo-backgroud-image-1000@2x.png" alt="Изображения двух телефонов с gold win">
+				</picture>
+			</div>
+		</section>
+	</main>
+
+	<!-- <footer class="footer">
 		<div class="center">
 			<nav class="footer__nav nav">
 				<div class="footer__logo logo">
@@ -151,7 +206,7 @@
 
 
 		</div>
-	</footer>
+	</footer> -->
 
 	<script type="module" src="js/main.js"></script>
 </body>

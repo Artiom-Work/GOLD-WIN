@@ -1,14 +1,19 @@
 // colors
 $page-bg: #100f15;
+$accent-bg-text: linear-gradient(10deg, #f3e43b 0%, #ffaf2e 100%);
 $accent-bg: linear-gradient(5deg, #fbc81f 0%, #ffaf2e 88.5%);
-$accent-bg-hover: linear-gradient(5deg, #fbc81f 0%, #ffaf2e 88.5%);
+$accent-bg-mobile: linear-gradient(8deg, #fbc81f 0%, #ffaf2e 88.5%);
+$accent-bg-hover: linear-gradient(5deg, #ffd23e 0%, #ffb43d 88.5%);
 $accent-bg-active: linear-gradient(5deg, #fbc81f 0%, #ffaf2e 88.5%);
 $button-bg: #20213099;
+$button-bg-mobile: #131620;
 $button-bg-hover: #202130cc;
 $button-bg-active: #202130;
 $text-color-main: hsla(240, 7%, 94%, 0.6);
+$text-color-secondary: #efeff1;
 $text-color-main-hover: rgba(239, 239, 241, 0.7);
 $text-color-main-active: #efeff1;
+$text-color-dark: #15141a;
 $text-color-light: #fff;
 $text-color-light-hover: #c9c9c9;
 $text-color-light-active: #787878;
@@ -16,7 +21,7 @@ $text-color-light-active: #787878;
 // fonts
 $font-family: "google-sans", sans-serif;
 $font-family-regular: "google-sans500", sans-serif;
-$second-family: "gotham-pro	", sans-serif;
+$second-family: "gotham-pro", sans-serif;
 // paths
 // $imagesPath: "../../images"; // example
 // propertyes

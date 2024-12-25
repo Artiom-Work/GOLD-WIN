@@ -1,0 +1,247 @@
+.promo {
+  padding: 156px 0 307px;
+  @media (max-width: 1200px) {
+    padding: 159px 0;
+  }
+  @media (max-width: 768px) {
+    padding: 119px 0 516px;
+  }
+  &__description {
+    max-width: 674px;
+    width: 100%;
+    min-height: 405px;
+    margin: 0 0 160px;
+    @media (max-width: 768px) {
+      margin: 0 auto 68px;
+      max-width: 332px;
+      min-height: 231px;
+    }
+  }
+  &__title {
+    font-size: 44px;
+    line-height: 152%;
+    letter-spacing: -0.02em;
+    color: #fff;
+    margin: 0 0 19px;
+    @media (max-width: 768px) {
+      font-size: 23px;
+      margin: 0 0 5px;
+      text-align: center;
+    }
+  }
+  &__text {
+    max-width: 476px;
+    font-size: 21px;
+    line-height: 161%;
+    margin: 0 0 48px;
+    @media (max-width: 768px) {
+      margin: 0 auto 28px;
+      max-width: 224px;
+      font-size: 14px;
+      line-height: 156%;
+      text-align: center;
+    }
+  }
+  &__buttons {
+    width: 100%;
+    min-height: 71px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    @media (max-width: 768px) {
+      gap: 8px;
+      justify-content: center;
+      min-height: 50px;
+    }
+  }
+  &__btn {
+    @include button(
+      $font-family,
+      19px,
+      24px,
+      $text-color-light,
+      $button-bg,
+      23px 27px 24px 30px,
+      17px
+    );
+    &-text {
+      &--mobile {
+        display: none;
+      }
+      @media (max-width: 768px) {
+        &--desktop {
+          display: none;
+        }
+        &--mobile {
+          display: inline-block;
+        }
+      }
+    }
+    display: flex;
+    align-items: center;
+    gap: 11.5px;
+    transition: all 0.4s ease 0s;
+    @include hover {
+      background: $button-bg-hover;
+    }
+    @include active {
+      background: $button-bg-active;
+      transform: scale(0.9);
+    }
+    @media (max-width: 768px) {
+      padding: 16px 26px 16px 33px;
+      border-radius: 7px;
+      background: $button-bg-mobile;
+      font-size: 13px;
+      line-height: 145%;
+    }
+  }
+
+  &__btn-icon {
+    width: 18px;
+    height: 20px;
+    fill: $text-color-light;
+    stroke: $text-color-main;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  &__btn--accent {
+    position: relative;
+    padding: 22px 56.5px 24px 33px;
+    background: $accent-bg;
+    color: $text-color-dark;
+    font-family: $font-family-regular;
+    span::after {
+      position: absolute;
+      content: "";
+      width: 12px;
+      height: 12px;
+      background: url(../../images/icons/become-partner-arrow.svg) no-repeat
+        center / cover;
+      right: 31px;
+      top: 28px;
+      @media (max-width: 768px) {
+        width: 9px;
+        height: 9px;
+        right: 23px;
+        top: 21px;
+      }
+    }
+    @include hover {
+      background: $accent-bg-hover;
+    }
+    @include active {
+      background: $accent-bg-active;
+      transform: scale(0.9);
+    }
+    @media (max-width: 768px) {
+      padding: 16px 39px 15px 25px;
+      color: $page-bg;
+    }
+  }
+  &__badges {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    @media (max-width: 768px) {
+      max-width: 332px;
+      margin: 0 auto;
+      gap: 8px;
+      justify-content: center;
+    }
+  }
+  &__badge {
+    padding: 21px 0 24px 32px;
+    max-width: 204px;
+    width: 100%;
+    min-height: 112px;
+    background: #141621;
+    border-radius: 20px;
+    @media (max-width: 768px) {
+      min-height: 57px;
+      padding: 16px 16px 8px 15px;
+      border-radius: 12px;
+    }
+  }
+  &__badge-name {
+    font-size: 23px;
+    line-height: 165%;
+    font-weight: 500;
+    background: $accent-bg-text;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @media (max-width: 768px) {
+      font-size: 14px;
+      line-height: 100%;
+      color: $text-color-secondary;
+      margin-bottom: -2px;
+    }
+  }
+  &__badge-text {
+    font-size: 19px;
+    line-height: 100%;
+    color: $text-color-light;
+    @media (max-width: 768px) {
+      font-size: 12px;
+      line-height: 151%;
+    }
+  }
+
+  &__image-wrapper {
+    max-width: 1920px;
+    width: 100%;
+    min-height: 1136.5px;
+    position: absolute;
+    top: 0;
+    left: calc(50% - (1920px / 2));
+    z-index: -1;
+    @media (max-width: 1830px) {
+      left: unset;
+      right: 0;
+    }
+    @media (max-width: 1200px) {
+      left: unset;
+      right: 0;
+      min-height: 1000px;
+    }
+    @media (max-width: 1000px) {
+      filter: brightness(70%);
+    }
+    @media (max-width: 768px) {
+      max-width: 566px;
+      min-height: 658px;
+      filter: unset;
+      top: 445px;
+      left: calc(50% - (566px / 2));
+    }
+    @media (max-width: 563px) {
+      left: unset;
+    }
+  }
+  &__image {
+    position: absolute;
+    max-width: 1920px;
+    width: 100%;
+    top: 0;
+    min-height: inherit;
+    object-fit: cover;
+    object-position: right;
+    @media (max-width: 1200px) {
+      object-position: -410px;
+      min-height: inherit;
+    }
+    @media (max-width: 1000px) {
+      object-position: center;
+    }
+    @media (max-width: 1000px) {
+      min-height: inherit;
+    }
+    @media (max-width: 768px) {
+      object-position: center;
+      object-fit: cover;
+    }
+  }
+}
