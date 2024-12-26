@@ -1,0 +1,118 @@
+.privilege {
+  &__list {
+    @include flexCenter;
+    flex-wrap: wrap;
+    row-gap: 53px;
+    column-gap: 39.5px;
+    @media (max-width: 1600px) {
+      row-gap: 20px;
+      justify-content: flex-end;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    @media (max-width: 768px) {
+      max-width: 400px;
+      gap: 16px;
+    }
+  }
+  &__list-item {
+    max-width: 581px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 72px;
+    gap: 20px;
+    &--big {
+      max-width: 775px;
+    }
+    &--medium {
+      max-width: 492px;
+    }
+    &--small {
+      max-width: 408px;
+    }
+    @media (max-width: 1600px) {
+      max-width: 1000px;
+      &:nth-child(3) {
+        order: 1;
+      }
+      &:nth-child(5) {
+        order: 1;
+      }
+      &:nth-child(2) {
+        margin-left: 5em;
+      }
+      &:nth-child(3) {
+        margin-left: 15em;
+      }
+      &:nth-child(4) {
+        margin-left: 10em;
+      }
+      &:nth-child(5) {
+        margin-left: 20em;
+      }
+    }
+    @media (max-width: 1000px) {
+      &:nth-child(3),
+      &:nth-child(5) {
+        order: 0;
+      }
+      &:nth-child(n) {
+        margin-left: unset;
+      }
+    }
+    @media (max-width: 768px) {
+      gap: 16px;
+      min-height: 46px;
+    }
+  }
+  &__image-wrapper {
+    border-radius: 20px;
+    max-width: 72px;
+    width: 100%;
+    height: 72px;
+    @include flexCenter;
+    background: #28272d;
+    @media (max-width: 768px) {
+      border-radius: 14px;
+      max-width: 46px;
+      height: 46px;
+    }
+  }
+  &__image {
+    width: 49px;
+    height: 49px;
+    &--dice {
+      width: 59.74px;
+      height: 48.71px;
+    }
+    &--car {
+      width: 56px;
+      height: 45px;
+    }
+    @media (max-width: 768px) {
+      width: 31px;
+      height: 31px;
+      &--dice {
+        width: 38px;
+      }
+      &--car {
+        width: 36px;
+        height: 29px;
+      }
+    }
+  }
+  &__text {
+    font-family: $second-family;
+    font-size: 23px;
+    line-height: 154%;
+    text-transform: uppercase;
+    color: $text-color-light;
+    @media (max-width: 768px) {
+      font-size: 14px;
+      line-height: 162%;
+      color: $text-color-secondary;
+    }
+  }
+}
