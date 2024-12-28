@@ -5,13 +5,14 @@
 // connecting scss files
 @import "./variables";
 // blocks
-@import "./logo.scss";
-@import "./nav.scss";
-@import "./socials.scss";
-@import "./header.scss";
-@import "./promo.scss";
-@import "./privilege.scss";
-@import "./footer.scss";
+@import "./blocks/logo";
+@import "./blocks/nav.scss";
+@import "./blocks/socials.scss";
+@import "./blocks/header.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/privilege.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/footer.scss";
 
 // properties
 body {
@@ -29,10 +30,26 @@ h5,
 h6 {
   font-family: $second-family;
   text-transform: uppercase;
+  font-weight: 500;
 }
 .center {
   max-width: 1588px;
   width: 100%;
   padding: 0 14px;
   margin: 0 auto;
+}
+.section-heading {
+  font-size: 37px;
+  line-height: 149%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: $text-color-light;
+  @media (max-width: 1000px) {
+    letter-spacing: -0.01em;
+    font-size: 28px;
+    line-height: 148%;
+  }
+  @media (max-width: 575px) {
+    font-size: 20px;
+  }
 }
