@@ -21,10 +21,10 @@
 			<nav class="header__nav nav">
 				<ul class="nav__list nav__list--header">
 					<li class="nav__list-item">
-						<a class="nav__link" href="#!">Преимущества</a>
+						<a class="nav__link" href="#advantages">Преимущества</a>
 					</li>
 					<li class="nav__list-item">
-						<a class="nav__link" href="#!">FAQ</a>
+						<a class="nav__link" href="#accordion">FAQ</a>
 					</li>
 					<li class="nav__list-item">
 						<a class="nav__link" href="#!">Отзывы</a>
@@ -63,10 +63,10 @@
 					<nav class="mobile-menu__box nav">
 						<ul class="nav__list nav__list--mobile">
 							<li class="nav__list-item">
-								<a class="nav__link-mobile-menu" href="#!">Преимущества</a>
+								<a class="nav__link-mobile-menu" href="#advantages">Преимущества</a>
 							</li>
 							<li class="nav__list-item">
-								<a class="nav__link-mobile-menu" href="#!">FAQ</a>
+								<a class="nav__link-mobile-menu" href="#accordion">FAQ</a>
 							</li>
 							<li class="nav__list-item">
 								<a class="nav__link-mobile-menu" href="#!">Отзывы</a>
@@ -211,7 +211,7 @@
 			</div>
 		</div>
 
-		<section class="advantages">
+		<section class="advantages" id="advantages">
 			<div class="center">
 				<h2 class="advantages__heading section-heading">
 					Развитая экосистема для&nbsp;максимального дохода
@@ -286,120 +286,115 @@
 			</div>
 		</section>
 
-		<section class="accordion">
+		<section class="faq">
 			<div class="center">
-				<h2 class="accordion__title section-heading">
+				<h2 class="faq__title section-heading">
 					Ответы на&nbsp;часто задаваемые вопросы
 				</h2>
-				<p class="accordion__text accordion__text--center">
+				<p class="faq__text accordion__text--center">
 					Мы&nbsp;&mdash; партнёрская программа лучшего iGaming проекта GoldWin. С&nbsp;нами ты&nbsp;получишь высокую
 					конверсию, лучшие условия монетизации на&nbsp;рынке и&nbsp;постоянные выплаты без холда
 				</p>
 
-				<div class="accordion__wrapper">
-					<ul class="accordion__list">
-						<li class="accordion__item">
-							<input class="accordion__input" id="item1" type="checkbox">
-							<label class="accordion__button" for="item1">
-								<h3 class="accordion__item-heading">
-									Как заработать на&nbsp;парнерской программе?
-								</h3>
-								<span></span>
-							</label>
-							<div class="accordion__body">
-								<p class="accordion__text">
-									Если у&nbsp;вас есть интернет-сайт или любой другой ресурс с&nbsp;аудиторией, вы&nbsp;можете
-									разместить на&nbsp;нем партнёрскую ссылку или баннер или любой другой подходящий вам и&nbsp;вашей
-									аудитории промоматериал, ведущий на&nbsp;сайт нашего продукта (оффера)&nbsp;&mdash; GoldWin. Любой
-									игрок, пришедший с&nbsp;вашего ресурса и&nbsp;прошедший регистрацию, будет приносить вам прибыль
-									в&nbsp;зависимости от&nbsp;модели, которую вы&nbsp;выбрали. Партнёрские ссылки и&nbsp;баннеры доступны
-									в&nbsp;разделе &laquo;ПРОМОМАТЕРИАЛЫ&raquo; партнёрского кабинета
-								</p>
-							</div>
-						</li>
+				<ul id="accordion" class="accordion">
+					<li class="accordion-item">
+						<div class="accordion-item__button">
+							<h3 class="accordion-item__title">
+								Как заработать на&nbsp;парнерской программе?
+							</h3>
+						</div>
 
-						<li class="accordion__item">
-							<input class="accordion__input" id="item2" type="checkbox">
-							<label class="accordion__button" for="item2">
-								<h3 class="accordion__item-heading">
-									Какими способами можно привлекать аудиторию?
-								</h3>
-								<span></span>
-							</label>
-							<div class="accordion__body">
-								<p class="accordion__text">
-									В&nbsp;личном кабинете партнёра вы&nbsp;можете создать кампанию и&nbsp;получить вашу реферальную
-									ссылку и&nbsp;разместить их&nbsp;на&nbsp;ресурсах с&nbsp;активной аудиторией. Формат рекламы GoldWin
-									остаётся полностью на&nbsp;ваше усмотрение
-								</p>
-							</div>
-						</li>
+						<div class="accordion-item__body">
+							<p class="accordion-item__text">
+								Если у&nbsp;вас есть интернет-сайт или любой другой ресурс с&nbsp;аудиторией, вы&nbsp;можете
+								разместить на&nbsp;нем партнёрскую ссылку или баннер или любой другой подходящий вам и&nbsp;вашей
+								аудитории промоматериал, ведущий на&nbsp;сайт нашего продукта (оффера)&nbsp;&mdash; GoldWin. Любой
+								игрок, пришедший с&nbsp;вашего ресурса и&nbsp;прошедший регистрацию, будет приносить вам прибыль
+								в&nbsp;зависимости от&nbsp;модели, которую вы&nbsp;выбрали. Партнёрские ссылки и&nbsp;баннеры доступны
+								в&nbsp;разделе &laquo;ПРОМОМАТЕРИАЛЫ&raquo; партнёрского кабинета
+							</p>
+						</div>
+					</li>
 
-						<li class="accordion__item">
-							<input class="accordion__input" id="item3" type="checkbox">
-							<label class="accordion__button" for="item3">
-								<h3 class="accordion__item-heading">
-									В&nbsp;чем различия моделей сотрудничества?
-								</h3>
-								<span></span>
-							</label>
-							<div class="accordion__body">
-								<p class="accordion__text">
-									На&nbsp;данный момент у&nbsp;нас существует 2&nbsp;модели сотрудничества: RevShare&nbsp;15%
-									с&nbsp;депозитов и&nbsp;RevShare&nbsp;60% с&nbsp;GGR
-									RevShare 15%&nbsp;&mdash; это процент, который начисляется партнёру за&nbsp;каждый депозит его
-									игроков, вне зависимости от&nbsp;выигрышей и&nbsp;проигрышей
-									RevShare&nbsp;60% с&nbsp;проигрыша&nbsp;&mdash; это процент, который начисляется партнёру
-									с&nbsp;каждого проигрыша его игроков. То&nbsp;есть если игрок сделал депозит в&nbsp;размере
-									100&nbsp;$, сделал ставку в&nbsp;размере 50&nbsp;$ и&nbsp;проиграл&nbsp;её, то&nbsp;партнёру
-									зачисляется 30&nbsp;$, но&nbsp;если человек с&nbsp;изначального депозита в&nbsp;100&nbsp;$ смог
-									заработать 500&nbsp;$, то&nbsp;он&nbsp;сможет сделать больше ставок. Следовательно у&nbsp;него может
-									быть больше выигрышей или проигрышей, что влечёт за&nbsp;собой возможный больший заработок для
-									партнёра
-								</p>
-							</div>
-						</li>
+					<li class="accordion-item">
+						<div class="accordion-item__button">
+							<h3 class="accordion-item__title">
+								Какими способами можно привлекать аудиторию?
+							</h3>
+						</div>
 
-						<li class="accordion__item">
-							<input class="accordion__input" id="item4" type="checkbox">
-							<label class="accordion__button" for="item4">
-								<h3 class="accordion__item-heading">
-									Как получить большую ставку за&nbsp;модель RevShare c GGR?
-								</h3>
-								<span></span>
-							</label>
-							<div class="accordion__body">
-								<p class="accordion__text">
-									Решение о&nbsp;повышении ставки принимает ваш менеджер, который оценивает показатели ваших кампаний,
-									а&nbsp;также внутренних показателей проекта. Начальная ставка&nbsp;&mdash; 60%, в&nbsp;зависимости
-									от&nbsp;вашего трафика и&nbsp;других показателей, она может вырасти до&nbsp;70%!
-								</p>
-							</div>
-						</li>
+						<div class="accordion-item__body">
+							<p class="accordion-item__text">
+								В&nbsp;личном кабинете партнёра вы&nbsp;можете создать кампанию и&nbsp;получить вашу реферальную
+								ссылку и&nbsp;разместить их&nbsp;на&nbsp;ресурсах с&nbsp;активной аудиторией. Формат рекламы GoldWin
+								остаётся полностью на&nbsp;ваше усмотрение
+							</p>
+						</div>
+					</li>
 
-						<li class="accordion__item">
-							<input class="accordion__input" id="item5" type="checkbox">
-							<label class="accordion__button" for="item5">
-								<h3 class="accordion__item-heading">
-									У&nbsp;меня имеется авторский youtube канал с&nbsp;большой аудиторией, могу&nbsp;ли я&nbsp;получить
-									индивидуальные условия?
-								</h3>
-								<span></span>
-							</label>
-							<div class="accordion__body">
-								<p class="accordion__text">
-									Да, конечно, мы&nbsp;активно работаем с&nbsp;любыми крупными источниками, инфлюенсирами, блогерами,
-									которые могут предоставлять нам свой активный и&nbsp;платёжеспособный трафик. Поэтому мы&nbsp;можем
-									предложить вам индивидуальные условия в&nbsp;зависимости от&nbsp;ваших объёмов
-								</p>
-							</div>
-						</li>
-					</ul>
-				</div>
+					<li class="accordion-item">
+						<div class="accordion-item__button">
+							<h3 class="accordion-item__title">
+								В&nbsp;чем различия моделей сотрудничества?
+							</h3>
+						</div>
+
+						<div class="accordion-item__body">
+							<p class="accordion-item__text">
+								На&nbsp;данный момент у&nbsp;нас существует 2&nbsp;модели сотрудничества: RevShare&nbsp;15%
+								с&nbsp;депозитов и&nbsp;RevShare&nbsp;60% с&nbsp;GGR
+								RevShare 15%&nbsp;&mdash; это процент, который начисляется партнёру за&nbsp;каждый депозит его
+								игроков, вне зависимости от&nbsp;выигрышей и&nbsp;проигрышей
+								RevShare&nbsp;60% с&nbsp;проигрыша&nbsp;&mdash; это процент, который начисляется партнёру
+								с&nbsp;каждого проигрыша его игроков. То&nbsp;есть если игрок сделал депозит в&nbsp;размере
+								100&nbsp;$, сделал ставку в&nbsp;размере 50&nbsp;$ и&nbsp;проиграл&nbsp;её, то&nbsp;партнёру
+								зачисляется 30&nbsp;$, но&nbsp;если человек с&nbsp;изначального депозита в&nbsp;100&nbsp;$ смог
+								заработать 500&nbsp;$, то&nbsp;он&nbsp;сможет сделать больше ставок. Следовательно у&nbsp;него может
+								быть больше выигрышей или проигрышей, что влечёт за&nbsp;собой возможный больший заработок для
+								партнёра
+							</p>
+						</div>
+					</li>
+
+					<li class="accordion-item">
+						<div class="accordion-item__button">
+							<h3 class="accordion-item__title">
+								Как получить большую ставку за&nbsp;модель RevShare c GGR?
+							</h3>
+						</div>
+
+						<div class="accordion-item__body">
+							<p class="accordion-item__text">
+								Решение о&nbsp;повышении ставки принимает ваш менеджер, который оценивает показатели ваших кампаний,
+								а&nbsp;также внутренних показателей проекта. Начальная ставка&nbsp;&mdash; 60%, в&nbsp;зависимости
+								от&nbsp;вашего трафика и&nbsp;других показателей, она может вырасти до&nbsp;70%!
+							</p>
+						</div>
+					</li>
+
+					<li class="accordion-item">
+						<div class="accordion-item__button">
+							<h3 class="accordion-item__title">
+								У&nbsp;меня имеется авторский youtube канал с&nbsp;большой аудиторией, могу ли я получить
+								индивидуальные условия?
+							</h3>
+						</div>
+
+						<div class="accordion-item__body">
+							<p class="accordion-item__text">
+								Да, конечно, мы&nbsp;активно работаем с&nbsp;любыми крупными источниками, инфлюенсирами, блогерами,
+								которые могут предоставлять нам свой активный и&nbsp;платёжеспособный трафик. Поэтому мы&nbsp;можем
+								предложить вам индивидуальные условия в&nbsp;зависимости от&nbsp;ваших объёмов
+							</p>
+						</div>
+					</li>
+
+
+				</ul>
 			</div>
 		</section>
-	</main>
 
+	</main>
 
 	<footer class="footer">
 		<div class="center">
@@ -412,10 +407,10 @@
 
 				<ul class="nav__list nav__list--footer">
 					<li class="nav__list-item">
-						<a class="nav__link" href="#!">Преимущества</a>
+						<a class="nav__link" href="#advantages">Преимущества</a>
 					</li>
 					<li class="nav__list-item">
-						<a class="nav__link" href="#!">FAQ</a>
+						<a class="nav__link" href="#accordion">FAQ</a>
 					</li>
 					<li class="nav__list-item">
 						<a class="nav__link" href="#!">Отзывы</a>
@@ -453,8 +448,10 @@
 
 		</div>
 	</footer>
-
+	<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+	<script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
 	<script type="module" src="js/main.js"></script>
+	<script type="module" src="js/accordion.js"></script>
 </body>
 
 </html>
