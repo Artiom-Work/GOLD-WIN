@@ -12,6 +12,11 @@
       margin-right: auto;
     }
     &--footer {
+      position: relative;
+      left: -74px;
+      @media (max-width: 1000px) {
+        left: unset;
+      }
       @media (max-width: 768px) {
         align-items: start;
         gap: 2px;

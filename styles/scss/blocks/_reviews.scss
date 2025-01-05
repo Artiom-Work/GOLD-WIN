@@ -1,4 +1,8 @@
 .reviews {
+  padding: 0 0 208px;
+  @media (max-width: 1000px) {
+    padding: 0 0 81px;
+  }
   &__title {
     margin: 0 0 6px 0;
   }

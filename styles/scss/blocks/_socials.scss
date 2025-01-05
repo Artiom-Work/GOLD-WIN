@@ -27,6 +27,9 @@
   &__icon {
     fill: $text-color-light;
     transition: all 0.4s ease 0s;
+    &--contacts {
+      fill: $text-color-main;
+    }
     &--telegram {
       width: 21px;
       height: 21px;
