@@ -60,7 +60,10 @@
       font-size: 19px;
       line-height: 151%;
       @media (max-width: 1280px) {
-        max-width: 913px;
+        max-width: 900px;
+      }
+      @media (max-width: 1000px) {
+        max-width: 650px;
       }
       @media (max-width: 768px) {
         font-size: 14px;

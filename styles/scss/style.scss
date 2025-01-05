@@ -13,6 +13,7 @@
 @import "./blocks/privilege.scss";
 @import "./blocks/advantages.scss";
 @import "./blocks/faq.scss";
+@import "./blocks/reviews.scss";
 // @import "./blocks/accordion.scss";
 @import "./blocks/footer.scss";
 
@@ -22,7 +23,7 @@ body {
   font-size: 19px;
   line-height: 151%;
   background: $page-bg;
-  color: rgba(255, 255, 255, 0.7);
+  color: $text-color-main;
 }
 h1,
 h2,
@@ -39,6 +40,33 @@ h6 {
   width: 100%;
   padding: 0 14px;
   margin: 0 auto;
+  &--big {
+    max-width: 1960px;
+    width: 100%;
+    padding: 0 0 0 180px;
+    margin: 0 auto;
+    position: relative;
+    @media (max-width: 1600px) {
+      padding: 0 0 0 14px;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      width: 138px;
+      height: 592px;
+      top: -43%;
+      right: 0;
+      background: #100f15;
+      filter: blur(100px);
+      z-index: 1;
+      @media (max-width: 768px) {
+        width: 35px;
+        height: 388px;
+        top: -12%;
+        filter: blur(35px);
+      }
+    }
+  }
 }
 .section-heading {
   font-size: 37px;
