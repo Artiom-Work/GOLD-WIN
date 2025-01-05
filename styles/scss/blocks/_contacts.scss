@@ -5,8 +5,8 @@
     padding: 121px 0 38px;
     border-radius: 20px;
     background: image-set(
-        "./images/contacts/backgroud-contacts-1960.png" 1x,
-        "./images/contacts/backgroud-contacts@2x-1960.png" 2x
+        "../../images/contacts/backgroud-contacts-1960.png" 1x,
+        "../../images/contacts/backgroud-contacts@2x-1960.png" 2x
       )
       no-repeat center / cover;
     @media (max-width: 768px) {
@@ -15,8 +15,8 @@
     }
     @media (max-width: 575px) {
       background: image-set(
-          "./images/contacts/backgroud-contacts-360.png" 1x,
-          "./images/contacts/backgroud-contacts@2x-360.png" 2x
+          "../../images/contacts/backgroud-contacts-360.png" 1x,
+          "../../images/contacts/backgroud-contacts@2x-360.png" 2x
         )
         no-repeat center / cover;
     }

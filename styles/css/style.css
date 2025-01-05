@@ -955,12 +955,12 @@
   height: 614px;
   grid-column: 1/4;
   grid-row: 1/3;
-  background: url(/images/advantages/main-card-backround.svg) no-repeat right bottom 15%, #15141a;
+  background: url(../../images/advantages/main-card-backround.svg) no-repeat right bottom 15%, #15141a;
 }
 @media (max-width: 1280px) {
   .advantages__list-item:nth-child(1) {
     height: 518px;
-    background: url(/images/advantages/main-card-backround.svg) no-repeat right -17px bottom 21%/306px, rgba(22, 26, 39, 0.6);
+    background: url(../../images/advantages/main-card-backround.svg) no-repeat right -17px bottom 21%/306px, rgba(22, 26, 39, 0.6);
   }
 }
 @media (max-width: 1000px) {
@@ -1003,19 +1003,19 @@
   }
 }
 .advantages__list-item:nth-child(3) {
-  background: url(../../../images/advantages/card-backround2.svg) no-repeat center 99%/contain, #15141a;
+  background: url(../../images/advantages/card-backround2.svg) no-repeat center 99%/contain, #15141a;
 }
 @media (max-width: 768px) {
   .advantages__list-item:nth-child(3) {
-    background: url(../../../images/advantages/card-backround2.svg) no-repeat right -26px bottom 15%/152%, #15141a;
+    background: url(../../images/advantages/card-backround2.svg) no-repeat right -26px bottom 15%/152%, #15141a;
   }
 }
 .advantages__list-item:nth-child(4) {
-  background: url(../../../images/advantages/card-backround3.svg) no-repeat bottom right 18%/auto, #15141a;
+  background: url(../../images/advantages/card-backround3.svg) no-repeat bottom right 18%/auto, #15141a;
 }
 @media (max-width: 768px) {
   .advantages__list-item:nth-child(4) {
-    background: url(../../../images/advantages/card-backround3.svg) no-repeat bottom -8px right 0px/185px, #15141a;
+    background: url(../../images/advantages/card-backround3.svg) no-repeat bottom -8px right 0px/185px, #15141a;
   }
 }
 .advantages__list-item:nth-child(4), .advantages__list-item:nth-child(5), .advantages__list-item:nth-child(6) {
@@ -1558,8 +1558,8 @@
   min-height: 565px;
   padding: 121px 0 38px;
   border-radius: 20px;
-  background: -webkit-image-set(url("./images/contacts/backgroud-contacts-1960.png") 1x, url("./images/contacts/backgroud-contacts@2x-1960.png") 2x) no-repeat center/cover;
-  background: image-set("./images/contacts/backgroud-contacts-1960.png" 1x, "./images/contacts/backgroud-contacts@2x-1960.png" 2x) no-repeat center/cover;
+  background: -webkit-image-set(url("../../images/contacts/backgroud-contacts-1960.png") 1x, url("../../images/contacts/backgroud-contacts@2x-1960.png") 2x) no-repeat center/cover;
+  background: image-set("../../images/contacts/backgroud-contacts-1960.png" 1x, "../../images/contacts/backgroud-contacts@2x-1960.png" 2x) no-repeat center/cover;
 }
 @media (max-width: 768px) {
   .contacts__wrapper-bg {
@@ -1569,8 +1569,8 @@
 }
 @media (max-width: 575px) {
   .contacts__wrapper-bg {
-    background: -webkit-image-set(url("./images/contacts/backgroud-contacts-360.png") 1x, url("./images/contacts/backgroud-contacts@2x-360.png") 2x) no-repeat center/cover;
-    background: image-set("./images/contacts/backgroud-contacts-360.png" 1x, "./images/contacts/backgroud-contacts@2x-360.png" 2x) no-repeat center/cover;
+    background: -webkit-image-set(url("../../images/contacts/backgroud-contacts-360.png") 1x, url("../../images/contacts/backgroud-contacts@2x-360.png") 2x) no-repeat center/cover;
+    background: image-set("../../images/contacts/backgroud-contacts-360.png" 1x, "../../images/contacts/backgroud-contacts@2x-360.png" 2x) no-repeat center/cover;
   }
 }
 .contacts__title {
