@@ -53,6 +53,7 @@
     color: $text-color-dark;
     background: $accent-bg;
     border-radius: 17px;
+    transition: all 0.4s ease 0s;
     @include flexCenter;
     @media (max-width: 575px) {
       max-width: 173px;
@@ -78,6 +79,13 @@
         right: 23px;
         top: 21px;
       }
+    }
+    @include hover {
+      background: $accent-bg-hover;
+    }
+    @include active {
+      background: $accent-bg-active;
+      transform: scale(0.9);
     }
   }
   &__socials {
