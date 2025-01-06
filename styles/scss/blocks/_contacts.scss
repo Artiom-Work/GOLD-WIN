@@ -1,12 +1,13 @@
 .contacts {
   &__wrapper-bg {
+    max-width: 1560px;
     width: 100%;
     min-height: 565px;
     padding: 121px 0 38px;
     border-radius: 20px;
     background: image-set(
-        "../../images/contacts/backgroud-contacts-1960.png" 1x,
-        "../../images/contacts/backgroud-contacts@2x-1960.png" 2x
+        url("../../images/contacts/backgroud-contacts-1960@2x.png") 2x,
+        url("../../images/contacts/backgroud-contacts-1960.png") 1x
       )
       no-repeat center / cover;
     @media (max-width: 768px) {
@@ -15,8 +16,8 @@
     }
     @media (max-width: 575px) {
       background: image-set(
-          "../../images/contacts/backgroud-contacts-360.png" 1x,
-          "../../images/contacts/backgroud-contacts@2x-360.png" 2x
+          url("../../images/contacts/backgroud-contacts-360@2x.png") 2x,
+          url("../../images/contacts/backgroud-contacts-360.png") 1x
         )
         no-repeat center / cover;
     }
