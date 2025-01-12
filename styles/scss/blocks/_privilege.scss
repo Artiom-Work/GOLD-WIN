@@ -74,11 +74,11 @@
     height: 72px;
     @include flexCenter;
     background: $icons-bg;
-    // @media (max-width: 768px) {
-    //   border-radius: 14px;
-    //   max-width: 46px;
-    //   height: 46px;
-    // }
+    @media (max-width: 768px) {
+      border-radius: 14px;
+      max-width: 46px;
+      height: 46px;
+    }
   }
   &__image {
     width: 49px;
@@ -91,17 +91,17 @@
       width: 56px;
       height: 45px;
     }
-    // @media (max-width: 768px) {
-    //   width: 31px;
-    //   height: 31px;
-    //   &--dice {
-    //     width: 38px;
-    //   }
-    //   &--car {
-    //     width: 36px;
-    //     height: 29px;
-    //   }
-    // }
+    @media (max-width: 768px) {
+      width: 31px;
+      height: 31px;
+      &--dice {
+        width: 38px;
+      }
+      &--car {
+        width: 36px;
+        height: 29px;
+      }
+    }
   }
   &__text {
     font-family: $second-family;
@@ -109,10 +109,10 @@
     line-height: 154%;
     text-transform: uppercase;
     color: $text-color-light;
-    // @media (max-width: 768px) {
-    //   font-size: 14px;
-    //   line-height: 162%;
-    //   color: $text-color-secondary;
-    // }
+    @media (max-width: 768px) {
+      font-size: 14px;
+      line-height: 162%;
+      color: $text-color-secondary;
+    }
   }
 }
