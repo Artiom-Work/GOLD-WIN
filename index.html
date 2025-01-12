@@ -143,10 +143,15 @@
 
 
 				<picture class="promo__image-wrapper">
-					<source srcset="./images/promo/promo-backgroud-image-1920.webp " media="(min-width: 1000px)">
-					<source srcset="./images/promo/promo-backgroud-image-360.webp" media="(max-width: 767px)">
+					<source
+						srcset="./images/promo/promo-backgroud-image-1920@2x.webp , ./images/promo/promo-backgroud-image-1920@2x.webp "
+						media="(min-width: 1000px)">
+					<source
+						srcset="./images/promo/promo-backgroud-image-360@2x.webp , ./images/promo/promo-backgroud-image-360@2x.webp"
+						media="(max-width: 767px)">
 
-					<img class="promo__image" src="./images/promo/promo-backgroud-image-1000.webp"
+					<img class="promo__image" src="./images/promo/promo-backgroud-image-1000@2x.webp"
+						srcset="./images/promo/promo-backgroud-image-1000@2x.webp" loading="lazy"
 						alt="Изображения двух телефонов с gold win">
 				</picture>
 			</div>
@@ -221,7 +226,7 @@
 						</h3>
 
 						<img class="advantages__main-image" src="./images/advantages/main-card-image.png"
-							srcset="./images/advantages/main-card-image@2x.png" alt="Телефон с играми от goldwin">
+							srcset="./images/advantages/main-card-image@2x.png" loading="lazy" alt="Телефон с играми от goldwin">
 					</li>
 					<li class="advantages__list-item">
 						<h3 class="advantages__name">
