@@ -12,23 +12,23 @@
   &__nav {
     max-width: 980px;
     width: 100%;
-    @media (max-width: 1000px) {
-      display: none;
-    }
+    // @media (max-width: 1000px) {
+    //   display: none;
+    // }
   }
-  @media (max-width: 768px) {
-    margin-top: 12px;
-    min-height: 32px;
-  }
+  // @media (max-width: 768px) {
+  //   margin-top: 12px;
+  //   min-height: 32px;
+  // }
 }
 
 /* ====mobile-menu==== */
 
 .mobile-menu {
   display: none;
-  @media (max-width: 1000px) {
-    display: block;
-  }
+  // @media (max-width: 1000px) {
+  //   display: block;
+  // }
   &__burger {
     position: relative;
     z-index: 3;

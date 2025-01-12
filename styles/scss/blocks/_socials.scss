@@ -2,9 +2,9 @@
   display: flex;
   &--footer {
     gap: 25px;
-    @media (max-width: 1000px) {
-      gap: 10px;
-    }
+    // @media (max-width: 1000px) {
+    //   gap: 10px;
+    // }
   }
   &__item {
     width: 48px;
@@ -15,14 +15,14 @@
       padding: 11px 0 0;
       width: 34px;
     }
-    @media (max-width: 1000px) {
-      width: 42px;
-      height: 49px;
-    }
-    @media (max-width: 1000px) {
-      width: 28px;
-      height: 36px;
-    }
+    // @media (max-width: 1000px) {
+    //   width: 42px;
+    //   height: 49px;
+    // }
+    // @media (max-width: 1000px) {
+    //   width: 28px;
+    //   height: 36px;
+    // }
   }
   &__icon {
     fill: $text-color-light;
@@ -33,25 +33,25 @@
     &--telegram {
       width: 21px;
       height: 21px;
-      @media (max-width: 1000px) {
-        width: 19px;
-        height: 19px;
-      }
+      // @media (max-width: 1000px) {
+      //   width: 19px;
+      //   height: 19px;
+      // }
     }
     &--vk {
       width: 25px;
       height: 26px;
     }
-    @include hover {
-      fill: $text-color-light-hover;
-    }
-    @include active {
-      transform: scale(0.9);
-      fill: $text-color-light-active;
-    }
-    @include active-mobile {
-      transform: scale(0.9);
-      fill: $text-color-light-active;
-    }
+    // @include hover {
+    //   fill: $text-color-light-hover;
+    // }
+    // @include active {
+    //   transform: scale(0.9);
+    //   fill: $text-color-light-active;
+    // }
+    // @include active-mobile {
+    //   transform: scale(0.9);
+    //   fill: $text-color-light-active;
+    // }
   }
 }

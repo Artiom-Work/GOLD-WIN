@@ -49,9 +49,9 @@ h6 {
     padding: 0 0 0 200px;
     margin: 0 auto;
     position: relative;
-    @media (max-width: 1600px) {
-      padding: 0 0 0 14px;
-    }
+    // @media (max-width: 1600px) {
+    //   padding: 0 0 0 14px;
+    // }
     &::after {
       position: absolute;
       content: "";
@@ -62,12 +62,12 @@ h6 {
       background: #100f15;
       filter: blur(100px);
       z-index: 1;
-      @media (max-width: 768px) {
-        width: 35px;
-        height: 388px;
-        top: -12%;
-        filter: blur(35px);
-      }
+      // @media (max-width: 768px) {
+      //   width: 35px;
+      //   height: 388px;
+      //   top: -12%;
+      //   filter: blur(35px);
+      // }
     }
   }
 }
@@ -77,12 +77,12 @@ h6 {
   letter-spacing: -0.02em;
   text-align: center;
   color: $text-color-light;
-  @media (max-width: 1000px) {
-    letter-spacing: -0.01em;
-    font-size: 28px;
-    line-height: 148%;
-  }
-  @media (max-width: 575px) {
-    font-size: 20px;
-  }
+  // @media (max-width: 1000px) {
+  //   letter-spacing: -0.01em;
+  //   font-size: 28px;
+  //   line-height: 148%;
+  // }
+  // @media (max-width: 575px) {
+  //   font-size: 20px;
+  // }
 }
