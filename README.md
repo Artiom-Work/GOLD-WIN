@@ -42,5 +42,6 @@ $\color{limegreen}\text{Тренировочная работа}$
 ✅ Figma
 ✅ SVG спрайты
 ✅ Hover/active эффекты
+✅ Pixel Perfect
 
 ---
