@@ -1459,6 +1459,9 @@
 .reviews__title {
   margin: 0 0 6px 0;
 }
+.reviews__text {
+  cursor: auto;
+}
 @media (max-width: 768px) {
   .reviews__text {
     font-size: 13px;
@@ -1483,7 +1486,8 @@
 }
 @media (hover: hover) and (hover: hover) {
   .reviews__list:hover:hover {
-    cursor: pointer;
+    cursor: -webkit-grab;
+    cursor: grab;
   }
 }
 @media (max-width: 768px) {
@@ -1531,6 +1535,7 @@
   font-size: 23px;
   line-height: 154%;
   color: #fff;
+  cursor: auto;
 }
 @media (max-width: 768px) {
   .reviews-card__name {
