@@ -1,4 +1,5 @@
 "use strict";
 const swiper = new Swiper(".reviews-swiper", {
-	slidesPerView: 'auto'
+	slidesPerView: 'auto',
+	mousewheel: true
 });

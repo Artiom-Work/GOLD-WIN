@@ -3,14 +3,50 @@
   align-items: center;
   justify-content: flex-end;
   gap: 17px;
+
+  li:has(ul.sub-menu) {
+    & > a.nav__link {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    & > a.nav__link::after {
+      content: "";
+      right: 0;
+      width: 24px;
+      height: 24px;
+      background-color: currentColor;
+
+      -webkit-mask-image: url("../../images/icons/arrow-down.svg");
+      mask-image: url("../../images/icons/arrow-down.svg");
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+      mask-position: center;
+      -webkit-mask-size: contain;
+      mask-size: contain;
+    }
+
+    @include hover {
+      .sub-menu {
+        visibility: visible;
+        height: auto;
+      }
+    }
+  }
+
   &__list {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 24px;
+
     &--header {
       margin-right: auto;
     }
+
     &--footer {
       position: relative;
       left: -74px;
@@ -22,11 +58,13 @@
         gap: 2px;
       }
     }
+
     @media (max-width: 1500px) {
       width: 100%;
       margin-right: unset;
       justify-content: center;
     }
+
     @media (max-width: 1000px) {
       flex-direction: column;
       justify-content: center;
@@ -35,6 +73,16 @@
       }
     }
   }
+  .sub-menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-block: 10px;
+    height: 0;
+    visibility: hidden;
+  }
+
   &__link {
     display: inline-block;
     font-family: $font-family;
@@ -42,6 +90,16 @@
     line-height: 151%;
     color: $text-color-main;
     transition: all 0.4s ease 0s;
+    will-change: transform;
+    cursor: pointer;
+
+    svg {
+      width: 24px;
+      height: 24px;
+      stroke: currentColor;
+      stroke-width: 2px;
+    }
+
     &-mobile-menu {
       font-family: $second-family;
       font-size: 20px;
@@ -50,18 +108,22 @@
       text-transform: uppercase;
       color: $text-color-light;
     }
+
     @include hover {
       color: $text-color-main-hover;
     }
+
     @include active {
       color: $text-color-main-active;
       transform: scale(0.9);
     }
+
     @media (max-width: 768px) {
       font-size: 14px;
       line-height: 156%;
     }
   }
+
   &__btn {
     transition: all 0.4s ease 0s;
     @include button(
@@ -88,10 +150,11 @@
       border-radius: 0px;
     }
   }
+
   @media (max-width: 1000px) {
     flex-direction: column;
     justify-content: center;
-    padding: 90px 0 105px;
+    padding: 200px 0 105px;
     gap: 0;
   }
 }
